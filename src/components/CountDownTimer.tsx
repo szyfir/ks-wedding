@@ -11,10 +11,12 @@ const CountDownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
 
   if (days + hours + minutes + seconds <= 0) {
     return (
-      <div className="expired-notice">
-        <span>Expired!!!</span>
-        <p>Please select a future date and time.</p>
-      </div>
+      <ShowCounter
+        days={0}
+        hours={0}
+        minutes={0}
+        seconds={0}
+      />
     );
   } else {
     return (

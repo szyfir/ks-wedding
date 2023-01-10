@@ -21,13 +21,13 @@ const ShowCounter: React.FC<ShowCounterProps> = ({
         rel="noopener noreferrer"
         className="countdown-link"
       >
-        <DateTimeDisplay value={days} type={"Days"} isDanger={days <= 3} />
+        <DateTimeDisplay value={days} type={"Dni"} isDanger={days <= 3} />
         <p>:</p>
-        <DateTimeDisplay value={hours} type={"Hours"} isDanger={false} />
+        <DateTimeDisplay value={hours} type={"Godzin"} isDanger={false} />
         <p>:</p>
-        <DateTimeDisplay value={minutes} type={"Mins"} isDanger={false} />
+        <DateTimeDisplay value={minutes} type={"Minut"} isDanger={false} />
         <p>:</p>
-        <DateTimeDisplay value={seconds} type={"Seconds"} isDanger={false} />
+        <DateTimeDisplay value={seconds} type={"Sekundhot"} isDanger={false} />
       </a>
     </div>
   );

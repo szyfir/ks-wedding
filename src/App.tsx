@@ -3,8 +3,14 @@ import "./App.css";
 import { Grid, styled, Typography } from "@mui/material";
 import Image from "./img/appPhoto.jpg"; // Import using relative path
 import Card from "./img/weddingCard.png";
-import { useCountdown } from "./hooks/useCountDown";
 import CountDownTimer from "./components/CountDownTimer";
+import AboutAvatar from "./components/AboutAvatar";
+import PhotoGallery from "./components/PhotoGallery";
+import GoldenLine from "./components/common/GoldenLine";
+import ChurchDetails from "./components/ChurchDetails";
+import PresentsDetails from "./components/PresentsDetails";
+import WeddingHallDetails from "./components/WeddingHallDetails";
+import ContactFooter from "./components/ContactFooter";
 
 const Container = styled("div")(({ theme }) => ({
   display: "flex",
@@ -40,11 +46,12 @@ const HeaderPhoto = styled("div")(({ theme }) => ({
 const HeaderText = styled("div")(({ theme }) => ({
   flex: "0 0 50vw",
   order: 2,
-  backgroundImage: `url(${Card})`,
-  backgroundSize: "100%",
-  backgroundRepeat: "no-repeat",
-  opacity: "90%",
-  minHeight: "80vh",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  height: "100vh",
+  flexDirection: "column",
+  textAlign: "center",
 
   "@media (max-width: 780px)": {
     flexDirection: "column",
@@ -54,8 +61,6 @@ const HeaderText = styled("div")(({ theme }) => ({
 const RowContainer = styled("div")(({ theme }) => ({
   display: "flex",
   flex: 1,
-  minHeight: "50vh",
-  background: "blue",
 
   "@media (max-width: 780px)": {
     flexDirection: "column",
@@ -63,7 +68,6 @@ const RowContainer = styled("div")(({ theme }) => ({
 }));
 
 const RowColumnL = styled("div")(({ theme }) => ({
-  background: "orange",
   flex: 1,
   order: 1,
 }));
@@ -71,14 +75,10 @@ const RowColumnL = styled("div")(({ theme }) => ({
 const RowColumnR = styled("div")(({ theme }) => ({
   flex: "0 0 50vw",
   order: 2,
-  backgroundColor: "green",
+  height: "100%",
 }));
 
-const GoldLIne = styled("div")(({ theme }) => ({
-  background: "#c09d34",
-  height: "0.25rem",
-  width: "80%",
-}));
+
 
 // const HeaderContainer = styled("section")(({ theme }) => ({
 //   display: "flex",
@@ -120,8 +120,8 @@ function App() {
       <Header>
         <HeaderPhoto>
           <Typography
-            variant="h3"
-            component="h3"
+            variant="h2"
+            component="h2"
             sx={{
               fontFamily: "PinyonScript",
               fontWeight: 400,
@@ -133,6 +133,7 @@ function App() {
               marginLeft: "auto",
               marginRight: "auto",
               textAlign: "center",
+              fontSize: "5rem"
             }}
           >
             Klaudia & Szymon
@@ -156,17 +157,40 @@ function App() {
           </Typography>
         </HeaderPhoto>
         <HeaderText>
-          <CountDownTimer targetDate={new Date("2023-09-23")} />
-          <GoldLIne></GoldLIne>
+          <CountDownTimer targetDate={new Date("2023-09-23 16:00")} />
+          <GoldenLine />
+          <Typography
+            variant="h4"
+            component="h4"
+            m={3}
+          >
+            Tutaj jakiś tekst zapraszamy wszystkich na weselicho hehe
+          </Typography>
         </HeaderText>
       </Header>
       <RowContainer>
-        <RowColumnL>Hej</RowColumnL>
-        <RowColumnR>Prawo</RowColumnR>
+        <RowColumnL>
+          <AboutAvatar />
+        </RowColumnL>
+        <RowColumnR>
+          <PhotoGallery />
+        </RowColumnR>
       </RowContainer>
       <RowContainer>
-        <RowColumnL>Hej</RowColumnL>
-        <RowColumnR>Prawo</RowColumnR>
+        <RowColumnL>
+          <ChurchDetails />
+        </RowColumnL>
+        <RowColumnR>
+          <PresentsDetails />
+        </RowColumnR>
+      </RowContainer>
+      <RowContainer>
+        <RowColumnL>
+          <WeddingHallDetails />
+        </RowColumnL>
+        <RowColumnR>
+          <ContactFooter />
+        </RowColumnR>
       </RowContainer>
 
       {/* <HeaderContainer
