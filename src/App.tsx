@@ -41,10 +41,11 @@ const HeaderPhoto = styled("div")(({ theme }) => ({
   "@media (max-width: 780px)": {
     flexDirection: "column",
   },
+
 }));
 
 const HeaderText = styled("div")(({ theme }) => ({
-  flex: "0 0 50vw",
+  flex: "0 0 40vw",
   order: 2,
   display: "flex",
   justifyContent: "center",
@@ -60,12 +61,17 @@ const HeaderText = styled("div")(({ theme }) => ({
 
 const RowContainer = styled("div")(({ theme }) => ({
   display: "flex",
-  flex: 1,
+  flexDirection: "row",
 
   "@media (max-width: 780px)": {
+    flex: 1,
     flexDirection: "column",
   },
 }));
+
+const SingleRow = styled("div")(({ theme }) => ({
+  flex: 1,
+}))
 
 const RowColumnL = styled("div")(({ theme }) => ({
   flex: 1,
@@ -75,7 +81,6 @@ const RowColumnL = styled("div")(({ theme }) => ({
 const RowColumnR = styled("div")(({ theme }) => ({
   flex: "0 0 50vw",
   order: 2,
-  height: "100%",
 }));
 
 
@@ -133,7 +138,7 @@ function App() {
               marginLeft: "auto",
               marginRight: "auto",
               textAlign: "center",
-              fontSize: "5rem"
+              fontSize: "3.25rem",
             }}
           >
             Klaudia & Szymon
@@ -160,38 +165,43 @@ function App() {
           <CountDownTimer targetDate={new Date("2023-09-23 16:00")} />
           <GoldenLine />
           <Typography
-            variant="h4"
-            component="h4"
+            variant="h6"
+            component="h6"
             m={3}
+            sx={{
+              fontSize: "1rem",
+              fontFamily: "Merriweather",
+            }}
           >
-            Tutaj jakiś tekst zapraszamy wszystkich na weselicho hehe
+            Zakochani i świadomi,
+            że ich miłość to nie wiatr,
+            mają zaszczyt zawiadomić,
+            że chcą razem iść przez świat.
           </Typography>
         </HeaderText>
       </Header>
+      <SingleRow>
+        <AboutAvatar />
+      </SingleRow>
       <RowContainer>
         <RowColumnL>
-          <AboutAvatar />
-        </RowColumnL>
-        <RowColumnR>
           <PhotoGallery />
-        </RowColumnR>
-      </RowContainer>
-      <RowContainer>
-        <RowColumnL>
+        </RowColumnL>
+        <RowColumnR>
           <ChurchDetails />
-        </RowColumnL>
-        <RowColumnR>
-          <PresentsDetails />
         </RowColumnR>
       </RowContainer>
       <RowContainer>
         <RowColumnL>
-          <WeddingHallDetails />
+          <PresentsDetails />
         </RowColumnL>
         <RowColumnR>
-          <ContactFooter />
+          <WeddingHallDetails />
         </RowColumnR>
       </RowContainer>
+      <SingleRow>
+        <ContactFooter />
+      </SingleRow>
 
       {/* <HeaderContainer
         sx={{

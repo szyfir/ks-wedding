@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: "Merriweather";
 }
 
 .expired-notice {
@@ -27,20 +28,19 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 2rem;
   line-height: 1.75rem;
-  padding: 0.5rem;
   text-decoration: none;
-  color: #000;
 }
 
 .show-counter .countdown {
   line-height: 2rem;
-  padding: 0 0.75rem 0 0.75rem;
+  padding: 0 0.2rem 0 0.2rem;
   align-items: center;
   display: flex;
   flex-direction: column;
+
 }
 
 .show-counter .countdown.danger {
@@ -48,7 +48,7 @@
 }
 
 .show-counter .countdown>p {
-  margin: 0;
+  margin-bottom: 0.25rem;
 }
 
 .show-counter .countdown>span {

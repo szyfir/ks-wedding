@@ -1,3 +1,4 @@
+import { styled } from "@mui/material";
 import DateTimeDisplay from "./DateTimeDisplay";
 
 type ShowCounterProps = {
@@ -15,20 +16,15 @@ const ShowCounter: React.FC<ShowCounterProps> = ({
 }) => {
   return (
     <div className="show-counter">
-      <a
-        href="https://tapasadhikary.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="countdown-link"
-      >
+      <div className="countdown-link">
         <DateTimeDisplay value={days} type={"Dni"} isDanger={days <= 3} />
         <p>:</p>
-        <DateTimeDisplay value={hours} type={"Godzin"} isDanger={false} />
+        <DateTimeDisplay value={hours} type={"Godziny"} isDanger={false} />
         <p>:</p>
-        <DateTimeDisplay value={minutes} type={"Minut"} isDanger={false} />
+        <DateTimeDisplay value={minutes} type={"Minuty"} isDanger={false} />
         <p>:</p>
-        <DateTimeDisplay value={seconds} type={"Sekundhot"} isDanger={false} />
-      </a>
+        <DateTimeDisplay value={seconds} type={"Sekundy"} isDanger={false} />
+      </div>
     </div>
   );
 };

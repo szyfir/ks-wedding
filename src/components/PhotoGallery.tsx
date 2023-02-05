@@ -10,6 +10,7 @@ import Image8 from "../img/gallery/8.jpg";
 import Image9 from "../img/gallery/9.jpg";
 import { useCallback, useState } from "react";
 import ImageViewer from "react-simple-image-viewer";
+import GoldenLine from "./common/GoldenLine";
 
 const itemData = [
     {
@@ -54,11 +55,14 @@ const itemData = [
 
 const Container = styled("div")(({ theme }) => ({
     width: "100%",
+    height: "100%",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    flexDirection: "column"
+    flexDirection: "column",
+    margin: 0,
 }));
+
 
 const PhotoGallery: React.FC<any> = () => {
     const [currentImage, setCurrentImage] = useState<number>(0);
@@ -76,8 +80,9 @@ const PhotoGallery: React.FC<any> = () => {
 
     return (
         <Container>
-            <Typography variant="h4" m={1} p={1}>Prywatne porno</Typography>
-            <ImageList sx={{ width: 500, height: 550, overflow: "hidden" }} cols={3} gap={2} rowHeight={164}>
+            <Typography variant="h5" m={1} p={1} sx={{ fontFamily: "Merriweather" }}>Nasze wspólne wspomnienia</Typography>
+            <GoldenLine />
+            <ImageList sx={{ overflow: "hidden" }} cols={3} gap={2} rowHeight={200}>
                 {itemData.map((item, i) => (
                     <ImageListItem key={item.img}>
                         <img
@@ -91,13 +96,17 @@ const PhotoGallery: React.FC<any> = () => {
                 ))}
             </ImageList>
             {isViewerOpen && (
+
                 <ImageViewer
                     src={itemData.map((w) => w.img)}
                     currentIndex={currentImage}
                     onClose={closeImageViewer}
                     disableScroll={false}
                     backgroundStyle={{
-                        backgroundColor: "rgba(0,0,0,0.9)"
+                        backgroundColor: "rgba(0,0,0,0.9)",
+                        margin: "0",
+                        padding: "0",
+
                     }}
                     closeOnClickOutside={true}
                 />

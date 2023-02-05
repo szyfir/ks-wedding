@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'roboto';
+  font-family: 'Merriweather';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
@@ -12,8 +12,12 @@ body {
   src: local('PinyonScript'), url("./fonts/PinyonScript-Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Merriweather";
+  src: local('Merriweather'), url("./fonts/Merriweather-Regular.ttf") format("truetype");
+}
+
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Merriweather';
 }

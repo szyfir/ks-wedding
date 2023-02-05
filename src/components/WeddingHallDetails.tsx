@@ -27,7 +27,7 @@ const PaperWrap = styled(Paper)(({ theme }) => ({
 const WeddingHallDetails: React.FC<any> = () => {
     return (
         <Container>
-            <Typography variant="h4" m={1} p={1}>Jak dojechać do sali</Typography>
+            <Typography variant="h5" m={1} p={1}>Jak dojechać do sali</Typography>
             <GoldenLine />
             <PaperWrap elevation={5}>
                 <Avatar
@@ -35,12 +35,12 @@ const WeddingHallDetails: React.FC<any> = () => {
                     src={WeddingHall}
                     sx={{ width: 100, height: 100 }}
                 />
-                <Typography variant="h4" mt={3} p={1} sx={{ fontSize: "1.25rem", textAlign: "center" }}>Młyn nad Starą Regą - Tarnowo</Typography>
+                <Typography variant="h4" mt={3} ml={3} p={1} sx={{ fontSize: "1.25rem", textAlign: "center" }}>Młyn nad Starą Regą - Tarnowo</Typography>
             </PaperWrap>
             <GoldenLine />
             <Map>
                 <iframe width="100%" height="100%" id="gmap_canvas"
-                    src="https://maps.google.com/maps?q=Jurija%20Gagarina%208,%2078-301%20%C5%9Awidwin&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    src="https://maps.google.com/maps?q=Tarnowo%201,%2073-150%20%C5%81obez&t=&z=13&ie=UTF8&iwloc=&output=embed"
                 ></iframe>
             </Map>
         </Container>

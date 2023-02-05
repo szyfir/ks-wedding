@@ -35,9 +35,9 @@ const Personal = styled(Paper)(({ theme }) => ({
 const ContactFooter: React.FC<any> = () => {
     return (
         <Container>
-            <Typography variant="h4" m={1} p={1}>Kontakt</Typography>
+            <Typography variant="h5" m={1} p={1} sx={{ fontFamily: "Merriweather" }}>Kontakt</Typography>
             <GoldenLine />
-            <Typography variant="h6" m={1} p={1} sx={{ fontSize: "1.25rem" }}>Prosimy o potwierdzenie obecności do bla bla</Typography>
+            <Typography variant="h6" m={1} p={1} sx={{ fontSize: "1.25rem", fontFamily: "Merriweather" }}>Prosimy o potwierdzenie obecności do bla bla</Typography>
             <PersonalWrap>
                 <Personal elevation={5}>
                     <Avatar
@@ -46,9 +46,9 @@ const ContactFooter: React.FC<any> = () => {
                         sx={{ width: 50, height: 50 }}
                     />
                     <Details>
-                        <Typography variant="h6" m={1} sx={{ fontWeight: "bold", fontSize: "0.75rem" }}>Pani Młoda</Typography>
-                        <Typography variant="h6" m={1} sx={{ fontSize: "0.75rem" }}>
-                            <LocalPhoneIcon fontSize="inherit" sx={{ marginTop: "0.25rem", marginRight: "0.3rem", fontSize: "0.75rem", textAlign: "center" }} />
+                        <Typography variant="h6" m={1} sx={{ fontWeight: "bold", fontSize: "0.75rem", fontFamily: "Merriweather" }}>Pani Młoda</Typography>
+                        <Typography variant="h6" m={1} sx={{ fontSize: "0.75rem", fontFamily: "Merriweather" }}>
+                            <LocalPhoneIcon fontSize="inherit" sx={{ marginTop: "0.25rem", marginRight: "0.3rem", fontSize: "0.75rem", textAlign: "center", }} />
                             664 899 145
                         </Typography>
                     </Details>
@@ -60,8 +60,8 @@ const ContactFooter: React.FC<any> = () => {
                         sx={{ width: 50, height: 50 }}
                     />
                     <Details>
-                        <Typography variant="h6" m={1} sx={{ fontWeight: "bold", fontSize: "0.75rem" }} >Pan Młody</Typography>
-                        <Typography variant="h6" m={1} sx={{ fontSize: "0.75rem" }}>
+                        <Typography variant="h6" m={1} sx={{ fontWeight: "bold", fontSize: "0.75rem", fontFamily: "Merriweather" }} >Pan Młody</Typography>
+                        <Typography variant="h6" m={1} sx={{ fontSize: "0.75rem", fontFamily: "Merriweather" }}>
                             <LocalPhoneIcon fontSize="inherit" sx={{ marginTop: "0.25rem", marginRight: "0.3rem", fontSize: "0.75rem", textAlign: "center" }} />
                             691 978 844
                         </Typography>

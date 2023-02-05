@@ -27,7 +27,7 @@ const PaperWrap = styled(Paper)(({ theme }) => ({
 const ChurchDetails: React.FC<any> = () => {
     return (
         <Container>
-            <Typography variant="h4" m={1} p={1}>Jak dojechać do kościoła</Typography>
+            <Typography variant="h5" m={1} p={1} sx={{ fontFamily: "Merriweather" }}>Jak dojechać do kościoła</Typography>
             <GoldenLine />
             <PaperWrap elevation={5}>
                 <Avatar
