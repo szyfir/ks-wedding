@@ -35,7 +35,7 @@ const WeddingHallDetails: React.FC<any> = () => {
                     src={WeddingHall}
                     sx={{ width: 100, height: 100 }}
                 />
-                <Typography variant="h4" mt={3} ml={3} p={1} sx={{ fontSize: "1.25rem", textAlign: "center" }}>Młyn nad Starą Regą - Tarnowo</Typography>
+                <Typography variant="h4" mt={3} p={1} sx={{ fontSize: "1.25rem", textAlign: "center" }}>Młyn nad Starą Regą - Tarnowo</Typography>
             </PaperWrap>
             <GoldenLine />
             <Map>

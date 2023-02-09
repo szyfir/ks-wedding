@@ -1,6 +1,8 @@
 import { Avatar, Paper, styled, Typography } from "@mui/material";
 import GoldenLine from "./common/GoldenLine";
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import Wife from "../img/zona.jpg";
+import Husband from "../img/maz.jpg";
 
 const Container = styled('div')(({ theme }) => ({
     height: "100%",
@@ -37,12 +39,12 @@ const ContactFooter: React.FC<any> = () => {
         <Container>
             <Typography variant="h5" m={1} p={1} sx={{ fontFamily: "Merriweather" }}>Kontakt</Typography>
             <GoldenLine />
-            <Typography variant="h6" m={1} p={1} sx={{ fontSize: "1.25rem", fontFamily: "Merriweather" }}>Prosimy o potwierdzenie obecności do bla bla</Typography>
+            <Typography variant="h6" m={1} p={1} sx={{ fontSize: "1rem", fontFamily: "Merriweather" }}>Prosimy o potwierdzenie obecności do <b>1 sierpnia 2023 r.</b></Typography>
             <PersonalWrap>
                 <Personal elevation={5}>
                     <Avatar
                         alt="Pani Młoda"
-                        src="/static/images/avatar/1.jpg"
+                        src={Wife}
                         sx={{ width: 50, height: 50 }}
                     />
                     <Details>
@@ -56,7 +58,7 @@ const ContactFooter: React.FC<any> = () => {
                 <Personal elevation={5}>
                     <Avatar
                         alt="Pan Młody"
-                        src="/static/images/avatar/1.jpg"
+                        src={Husband}
                         sx={{ width: 50, height: 50 }}
                     />
                     <Details>

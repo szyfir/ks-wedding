@@ -28,14 +28,16 @@ const PersonalWrap = styled('div')(({ theme }) => ({
 const Personal = styled(Paper)(({ theme }) => ({
     margin: "2rem",
     padding: "1rem",
-    display: "flex"
+    width: "85%",
+    display: "flex",
+    textAlign: "center"
 }));
 
 
 const AboutAvatar: React.FC<any> = () => {
     return (
         <Container>
-            <Typography variant="h5" m={1} p={1} sx={{ fontFamily: "Merriweather" }}>Państwo Młodzi
+            <Typography variant="h5" p={1} sx={{ margin: "auto", fontFamily: "Merriweather" }}>Państwo Młodzi
             </Typography>
             <GoldenLine />
             <PersonalWrap>
@@ -47,9 +49,10 @@ const AboutAvatar: React.FC<any> = () => {
                             width: 100, height: 100, fontFamily: "Merriweather",
                         }}
                     />
-                    <Typography variant="h6" p={1} ml={3} sx={{ fontSize: "0.75rem", fontFamily: "Merriweather", }}>
+                    <Typography variant="h6" p={1} sx={{ margin: "auto", fontSize: "0.75rem", fontFamily: "Merriweather", }}>
                         Klaudia Barna - 26 letnia przyszła żona.<br />
-                        Zakochałam się w jego niebieskich oczach<br /> i poczuciu humoru.
+                        Mój przyszły mąż jest moim najlepszym przyjacielem,
+                        największym wsparciem i najprawdziwszym uśmiechem
                     </Typography>
                 </Personal>
                 <Personal elevation={5}>
@@ -58,10 +61,10 @@ const AboutAvatar: React.FC<any> = () => {
                         src={Husband}
                         sx={{ width: 100, height: 100, fontFamily: "Merriweather", }}
                     />
-                    <Typography variant="h6" ml={3} p={1} sx={{ fontSize: "0.75rem", fontFamily: "Merriweather", }}>
+                    <Typography variant="h6" p={1} sx={{ margin: "auto", fontSize: "0.75rem", fontFamily: "Merriweather", }}>
                         Szymon Firlinger - 29 letni przyszły mąż.<br />
-                        Ta cyganka zawróciła w głowie mi.<br />
-                        Z tą cyganką chcę iść przez świat.
+                        Moja przyszła żona jest moją najsilniejszą motywacją,
+                        największym pocieszeniem i najgłębszą miłością
                     </Typography>
                 </Personal>
             </PersonalWrap>

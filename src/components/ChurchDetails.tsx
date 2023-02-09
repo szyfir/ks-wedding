@@ -7,7 +7,10 @@ const Container = styled("div")(({ theme }) => ({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "lightgrey"
+    backgroundColor: "lightgrey",
+
+    // "@media (max-width: 780px)": {
+    // },
 }));
 
 const Map = styled("div")(({ theme }) => ({

@@ -45,7 +45,7 @@ const HeaderPhoto = styled("div")(({ theme }) => ({
 }));
 
 const HeaderText = styled("div")(({ theme }) => ({
-  flex: "0 0 40vw",
+  flex: "0 0 55vw",
   order: 2,
   display: "flex",
   justifyContent: "center",
@@ -55,6 +55,7 @@ const HeaderText = styled("div")(({ theme }) => ({
   textAlign: "center",
 
   "@media (max-width: 780px)": {
+    flex: "0 0 40vw",
     flexDirection: "column",
   },
 }));
@@ -188,12 +189,12 @@ function App() {
           <PhotoGallery />
         </RowColumnL>
         <RowColumnR>
-          <ChurchDetails />
+          <PresentsDetails />
         </RowColumnR>
       </RowContainer>
-      <RowContainer>
+      <RowContainer style={{ backgroundColor: "lightgrey" }}>
         <RowColumnL>
-          <PresentsDetails />
+          <ChurchDetails />
         </RowColumnL>
         <RowColumnR>
           <WeddingHallDetails />
