@@ -3,6 +3,9 @@ import GoldenLine from "./common/GoldenLine";
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import Wife from "../img/zona.jpg";
 import Husband from "../img/maz.jpg";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const Container = styled('div')(({ theme }) => ({
     height: "100%",
@@ -35,11 +38,12 @@ const Personal = styled(Paper)(({ theme }) => ({
 }));
 
 const ContactFooter: React.FC<any> = () => {
+
     return (
         <Container>
             <Typography variant="h5" m={1} p={1} sx={{ fontFamily: "Merriweather" }}>Kontakt</Typography>
             <GoldenLine />
-            <Typography variant="h6" m={1} p={1} sx={{ fontSize: "1rem", fontFamily: "Merriweather" }}>Prosimy o potwierdzenie obecności do <b>1 sierpnia 2023 r.</b></Typography>
+            <Typography variant="h6" m={1} p={1} sx={{ fontSize: "1.2rem", fontFamily: "Merriweather", textAlign: "center" }}>Prosimy o potwierdzenie obecności do <b>1 sierpnia 2023 r.</b></Typography>
             <PersonalWrap>
                 <Personal elevation={5}>
                     <Avatar
@@ -70,7 +74,7 @@ const ContactFooter: React.FC<any> = () => {
                     </Details>
                 </Personal>
             </PersonalWrap>
-        </Container>
+        </Container >
     );
 }
 

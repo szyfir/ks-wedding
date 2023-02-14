@@ -3,6 +3,9 @@ import { display, height } from "@mui/system";
 import GoldenLine from "./common/GoldenLine";
 import Wife from "../img/zona.jpg";
 import Husband from "../img/maz.jpg";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const Container = styled('div')(({ theme }) => ({
     height: "100%",
@@ -28,20 +31,29 @@ const PersonalWrap = styled('div')(({ theme }) => ({
 const Personal = styled(Paper)(({ theme }) => ({
     margin: "2rem",
     padding: "1rem",
-    width: "85%",
+    width: "75%",
     display: "flex",
     textAlign: "center"
 }));
 
 
 const AboutAvatar: React.FC<any> = () => {
+    useEffect(() => {
+        AOS.init({
+            offset: 200,
+            duration: 600,
+            easing: 'linear',
+            delay: 100,
+        });
+    }, [])
+
     return (
         <Container>
             <Typography variant="h5" p={1} sx={{ margin: "auto", fontFamily: "Merriweather" }}>Państwo Młodzi
             </Typography>
             <GoldenLine />
             <PersonalWrap>
-                <Personal elevation={5}>
+                <Personal elevation={5} data-aos="fade-up">
                     <Avatar
                         alt="Klaudia Barna"
                         src={Wife}
@@ -55,7 +67,7 @@ const AboutAvatar: React.FC<any> = () => {
                         największym wsparciem i najprawdziwszym uśmiechem
                     </Typography>
                 </Personal>
-                <Personal elevation={5}>
+                <Personal elevation={5} data-aos="fade-up">
                     <Avatar
                         alt="Szymon Firlinger"
                         src={Husband}

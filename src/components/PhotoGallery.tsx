@@ -11,6 +11,9 @@ import Image9 from "../img/gallery/9.jpg";
 import { useCallback, useState } from "react";
 import ImageViewer from "react-simple-image-viewer";
 import GoldenLine from "./common/GoldenLine";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const itemData = [
     {
@@ -78,6 +81,15 @@ const PhotoGallery: React.FC<any> = () => {
         setIsViewerOpen(false);
     };
 
+    useEffect(() => {
+        AOS.init({
+            offset: 200,
+            duration: 600,
+            easing: 'linear',
+            delay: 100,
+        });
+    }, [])
+
     return (
         <Container>
             <Typography variant="h5" m={1} p={1} sx={{ fontFamily: "Merriweather" }}>Nasze wspólne wspomnienia</Typography>
@@ -86,6 +98,7 @@ const PhotoGallery: React.FC<any> = () => {
                 {itemData.map((item, i) => (
                     <ImageListItem key={item.img}>
                         <img
+                            data-aos="zoom-in"
                             src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
                             srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
                             alt={item.title}
