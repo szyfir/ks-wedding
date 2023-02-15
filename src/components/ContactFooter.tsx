@@ -53,8 +53,9 @@ const ContactFooter: React.FC<any> = () => {
                     />
                     <Details>
                         <Typography variant="h6" m={1} sx={{ fontWeight: "bold", fontSize: "0.75rem", fontFamily: "Merriweather" }}>Pani Młoda</Typography>
-                        <Typography variant="h6" m={1} sx={{ fontSize: "0.75rem", fontFamily: "Merriweather" }}>
-                            <LocalPhoneIcon fontSize="inherit" sx={{ marginTop: "0.25rem", marginRight: "0.3rem", fontSize: "0.75rem", textAlign: "center", }} />
+                        <Typography variant="h6" m={1} sx={{ fontSize: "0.85rem", fontFamily: "Merriweather" }}>
+                            <br />
+                            <LocalPhoneIcon fontSize="inherit" sx={{ marginTop: "0.3rem", marginRight: "0.3rem", fontSize: "0.85rem", textAlign: "center", }} />
                             664 899 145
                         </Typography>
                     </Details>
@@ -67,8 +68,9 @@ const ContactFooter: React.FC<any> = () => {
                     />
                     <Details>
                         <Typography variant="h6" m={1} sx={{ fontWeight: "bold", fontSize: "0.75rem", fontFamily: "Merriweather" }} >Pan Młody</Typography>
-                        <Typography variant="h6" m={1} sx={{ fontSize: "0.75rem", fontFamily: "Merriweather" }}>
-                            <LocalPhoneIcon fontSize="inherit" sx={{ marginTop: "0.25rem", marginRight: "0.3rem", fontSize: "0.75rem", textAlign: "center" }} />
+                        <Typography variant="h6" m={1} sx={{ fontSize: "0.85rem", fontFamily: "Merriweather" }}>
+                            <br />
+                            <LocalPhoneIcon fontSize="inherit" sx={{ marginTop: "0.3rem", marginRight: "0.3rem", fontSize: "0.85rem", textAlign: "center" }} />
                             691 978 844
                         </Typography>
                     </Details>

@@ -46,7 +46,7 @@ const PresentsDetails: React.FC<any> = () => {
         <Container>
             <Typography m={2} p={1} variant="h5" component="h5" sx={{ fontSize: "1.25rem", fontFamily: "Merriweather" }}>
                 Na wesele przybywajcie o prezenty się nie martwcie,
-                By nie składać ich na stercie niechaj zmieszczą się w kopercie.
+                by nie składać ich na stercie niechaj zmieszczą się w kopercie.
             </Typography>
             <GoldenLine />
             <Presents data-aos="zoom-in"
