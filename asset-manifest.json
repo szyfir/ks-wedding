@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ks-wedding/static/css/main.f2c3294a.css",
-    "main.js": "/ks-wedding/static/js/main.11f0402e.js",
+    "main.js": "/ks-wedding/static/js/main.905f3d36.js",
     "static/js/787.2eb58d51.chunk.js": "/ks-wedding/static/js/787.2eb58d51.chunk.js",
     "static/media/WeddingHall.jpg": "/ks-wedding/static/media/WeddingHall.1d6908e0ad7935eff383.jpg",
     "static/media/7.jpg": "/ks-wedding/static/media/7.75f608ad55e0847918ea.jpg",
@@ -22,11 +22,11 @@
     "static/media/zona.jpg": "/ks-wedding/static/media/zona.502583246526c86683f0.jpg",
     "index.html": "/ks-wedding/index.html",
     "main.f2c3294a.css.map": "/ks-wedding/static/css/main.f2c3294a.css.map",
-    "main.11f0402e.js.map": "/ks-wedding/static/js/main.11f0402e.js.map",
+    "main.905f3d36.js.map": "/ks-wedding/static/js/main.905f3d36.js.map",
     "787.2eb58d51.chunk.js.map": "/ks-wedding/static/js/787.2eb58d51.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f2c3294a.css",
-    "static/js/main.11f0402e.js"
+    "static/js/main.905f3d36.js"
   ]
 }
